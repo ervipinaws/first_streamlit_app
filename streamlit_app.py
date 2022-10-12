@@ -129,7 +129,7 @@ except URLError as e:
 
 ########################################################################################33
 
-def get_fruit_load_list()
+def get_fruit_load_list():
     with my_cnx.cursor() as my cur:
         my_cur.execute("select * from fruit_load_list")
         return my_cur.fetchall()
